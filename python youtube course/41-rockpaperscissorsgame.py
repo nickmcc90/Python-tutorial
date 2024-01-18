@@ -1,0 +1,52 @@
+import random
+
+while True:
+  choices = ["rock","paper","scissors"]
+
+  computer = random.choice(choices)
+  player = None
+
+  while player not in choices: #prevents person from making any other answers.
+    player = input("rock, paper, or scissors?: ").lower() # the .lower() makes it so that the player can type something capital.
+
+  if computer == player:
+    print("computer: ",computer)
+    print("player: ",player)
+    print("Tie!")
+
+  elif player == "paper":
+    if computer == "scissors":
+      print("computer: ",computer)
+      print("player: ",player)
+      print("You lose!")
+    if computer == "rock":
+      print("computer: ",computer)
+      print("player: ",player)
+      print("You win!")
+
+  elif player == "rock":
+    if computer == "scissors":
+      print("computer: ",computer)
+      print("player: ",player)
+      print("You win!")
+    if computer == "paper":
+      print("computer: ",computer)
+      print("player: ",player)
+      print("You lose!")
+
+  elif player == "scissors":
+    if computer == "paper":
+      print("computer: ",computer)
+      print("player: ",player)
+      print("You win!")
+    if computer == "rock":
+      print("computer: ",computer)
+      print("player: ",player)
+      print("You lose!")
+
+  play_again = input("Play again? (yes/no): ").lower()
+
+  if play_again != "yes":
+    break
+
+print("Bye!")
