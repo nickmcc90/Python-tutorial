@@ -20,3 +20,5 @@ except Exception as e: # it's not good to have a single exception block to handl
     print("something went wrong :(")
 else:
     print(result)   # if there's no exceptions, then we can print the result
+finally:
+    print("This will always execute")
