@@ -2,7 +2,7 @@ class Car:
 
   color = None
 
-# this function is out of the class
+# this function is outside of the class
 def change_color(vehicle,color):
   
   vehicle.color = color
