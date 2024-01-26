@@ -14,6 +14,9 @@ def display():
 
 x = IntVar() # accepts a 1 or 0 value
 
+photo = PhotoImage(file='star-rod.png')
+
+
 
 check_button = Checkbutton(window,
                            text="I agree to something",
@@ -25,7 +28,11 @@ check_button = Checkbutton(window,
                            fg='#00FF00',
                            bg='black',
                            activeforeground='#00FF00',
-                           activebackground='black')
+                           activebackground='black',
+                           padx=25,
+                           pady=10,
+                           image=photo,
+                           compound='left')
 
 check_button.pack()
 
